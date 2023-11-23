@@ -1,0 +1,77 @@
+/* Header */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0em 10em;
+    justify-content: space-between;
+
+    margin-top: 1em;
+    margin-right: 8em;
+}
+
+.pages {
+    display: flex;
+    gap: 3em;
+}
+
+.pages li {
+    list-style: none;
+}
+
+.pages li a {
+    color: #000;
+    text-decoration-line: none;
+    position: relative;
+}
+
+.pages li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.pages li a:hover::before {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    gap: 2em;
+}
+
+.social li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.social li svg {
+    font-size: 1.7em;
+}
+
+.social li svg:hover {
+    position: relative;
+    top: -2px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.3vw;
+    height: 6vh;
+
+    cursor: pointer;
+    border-radius: 70%;
+    background-color: #000;
+}
+
+.person p {
+    color: #fff;
+    font-weight: bold;
+}
