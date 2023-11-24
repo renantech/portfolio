@@ -29,6 +29,15 @@ function Home() {
                     </ul>
                 </nav>
             </header>
+            <main className={styles.main}>
+                <div className={styles.mainImage}>
+
+                </div>
+                <div className={styles.mainText}>
+                    <h1>React <br/>Developer</h1>
+                    <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript</p>
+                </div>
+            </main>
         </div>
      );
 }
