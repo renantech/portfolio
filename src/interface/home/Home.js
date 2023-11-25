@@ -1,6 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
-import { FaGithub, FaLinkedin  } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { CiShare1 } from "react-icons/ci";
 
 import styles from './Home.module.css';
 
@@ -9,7 +10,7 @@ function Home() {
         window.open(url, '_blank')
     }
 
-    return ( 
+    return (
         <div className={styles.home}>
             <header>
                 <nav className={styles.nav}>
@@ -24,22 +25,27 @@ function Home() {
                     <ul className={styles.social}>
                         <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
                         <li><FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></li>
-                        <li><FaLinkedin onClick={() => socialLinks('https://www.linkedin.com/in/renan-tech/')}  /></li>
-                        <li><BsFillMoonStarsFill  /></li>
+                        <li><FaLinkedin onClick={() => socialLinks('https://www.linkedin.com/in/renan-tech/')} /></li>
+                        <li><BsFillMoonStarsFill /></li>
                     </ul>
                 </nav>
             </header>
             <main className={styles.main}>
                 <div className={styles.mainImage}>
-
+                    <h1>Renan Mendes</h1>
+                    <h2>Engenharia de Software</h2>
                 </div>
                 <div className={styles.mainText}>
-                    <h1>React <br/>Developer</h1>
-                    <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript</p>
+                    <h1>React &lt;/&gt; Developer</h1>
+                    <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
+                    <div className={styles.mainButtons}>
+                        <button>Resumo<CiShare1 /> </button>
+                        <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                    </div> 
                 </div>
             </main>
         </div>
-     );
+    );
 }
 
 export default Home;

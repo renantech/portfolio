@@ -83,8 +83,14 @@
 }
 
 .mainImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     height: 92.4vh;
+    margin-top: -7em;
 }
 
 .mainText {
@@ -95,9 +101,54 @@
 
     width: 100%;
     height: 92.4vh;
+    margin-top: -1em;
+    margin-right: 12em;
 }
 
 .mainText h1 {
+    width: 30vw;
     margin-top: -1em;
+    
     font-size: 7em;
+    font-weight: bold;
+}
+
+.main p {
+    width: 32vw;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.mainButtons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    margin-top: 1em;
+}
+
+.mainButtons button {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+
+    padding: 1em 2em;
+
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #080808;
+}
+
+.mainButtons button:hover {
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.mainButtons a {
+    color: #000;
+    font-weight: bold;
 }
