@@ -166,7 +166,7 @@
 }
 
 /* Mobile */
-.navMobile {
+.headerMobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,11 +174,11 @@
     margin: 2em;
 }
 
-.navMobile svg {
+.headerMobile svg {
     font-size: 2em;
 }
 
-.navMobile .personMobile {
+.headerMobile .personMobile {
     display: flex;
     align-items: center;
     justify-content: center;

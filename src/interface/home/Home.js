@@ -59,7 +59,7 @@ function Home() {
                             <h1>React &lt;/&gt; Developer</h1>
                             <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
                             <div className={styles.mainButtons}>
-                                <button>Resumo<CiShare1 /> </button>
+                                <button>Currículo<CiShare1 /> </button>
                                 <a href="https://www.instagram.com/renan.mvc/">Contato</a>
                             </div>
                         </div>
@@ -70,13 +70,11 @@ function Home() {
                 </div>
             ) : (
                 <div>
-                    <header>
-                        <nav className={styles.navMobile}>
-                            <PiListThin />
-                            <div className={styles.personMobile}>
-                                <p>RM</p>
-                            </div>
-                        </nav>
+                    <header className={styles.headerMobile}>
+                        <PiListThin />
+                        <div className={styles.personMobile}>
+                            <p>RM</p>
+                        </div>
                     </header>
                 </div>
             )}
