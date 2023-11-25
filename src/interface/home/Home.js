@@ -5,11 +5,17 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { CiShare1 } from "react-icons/ci";
 import { PiListThin } from "react-icons/pi";
+import { IoMdClose } from "react-icons/io";
 
 import styles from './Home.module.css';
 
 function Home() {
+    const [openNavMobile, setOpenNavMobile] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    function toggleNavList() {
+        setOpenNavMobile(!openNavMobile);
+    }
 
     useEffect(() => {
         const handleResize = () => {
@@ -71,13 +77,29 @@ function Home() {
             ) : (
                 <div>
                     <header className={styles.headerMobile}>
-                        <PiListThin />
+                        <PiListThin onClick={toggleNavList} />
                         <div className={styles.personMobile}>
                             <p>RM</p>
                         </div>
                     </header>
+                    {openNavMobile && (
+                        <nav className={styles.overlayNav}>
+                            <IoMdClose onClick={toggleNavList} />
+                            <ul className={styles.pagesMobile}>
+                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Home</a></li>
+                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Projetos</a></li>
+                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Sobre mim</a></li>
+                            </ul>
+                            <ul className={styles.socialMobile}>
+                                <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
+                                <li><FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></li>
+                                <li><FaLinkedin onClick={() => socialLinks('https://www.linkedin.com/in/renan-tech/')} /></li>
+                                <li><BsFillMoonStarsFill /></li>
+                            </ul>
+                        </nav>
+                    )}
                     <main className={styles.mainMobile}>
-                    <div className={styles.mainTextMobile}>
+                        <div className={styles.mainTextMobile}>
                             <h1>React &lt;/&gt; Developer</h1>
                             <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
                             <div className={styles.mainButtonsMobile}>
