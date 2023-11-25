@@ -68,7 +68,7 @@
 
     cursor: pointer;
     border-radius: 70%;
-    background-color: #000;
+    background-color: #080808;
 }
 
 .person p {
@@ -80,6 +80,7 @@
 .main {
     display: flex;
     justify-content: center;
+    padding-bottom: 1em;
 }
 
 .mainImage {
@@ -151,4 +152,41 @@
 .mainButtons a {
     color: #000;
     font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 2em;
+    border-top: 2px solid #000;
+}
+
+/* Mobile */
+.navMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2em;
+}
+
+.navMobile svg {
+    font-size: 2em;
+}
+
+.navMobile .personMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3em;
+    height: 3em;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: #080808;    
 }
