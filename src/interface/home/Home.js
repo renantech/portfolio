@@ -76,6 +76,23 @@ function Home() {
                             <p>RM</p>
                         </div>
                     </header>
+                    <main className={styles.mainMobile}>
+                    <div className={styles.mainTextMobile}>
+                            <h1>React &lt;/&gt; Developer</h1>
+                            <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
+                            <div className={styles.mainButtonsMobile}>
+                                <button>Currículo<CiShare1 /> </button>
+                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                            </div>
+                        </div>
+                        <div className={styles.mainImageMobile}>
+                            <h1>Renan Mendes</h1>
+                            <h2>Engenharia de Software</h2>
+                        </div>
+                    </main>
+                    <footer className={styles.footer}>
+                        <h3>2023 &copy; Todos os direitos reservados</h3>
+                    </footer>
                 </div>
             )}
         </div>
