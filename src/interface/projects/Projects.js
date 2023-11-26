@@ -7,9 +7,9 @@ import { CiShare1 } from "react-icons/ci";
 import { PiListThin } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
 
-import styles from './Home.module.css';
+import styles from './Projects.module.css';
 
-function Home() {
+function Projects() {
     const [openNavMobile, setOpenNavMobile] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -37,7 +37,7 @@ function Home() {
     return (
         <div>
             {windowWidth > 768 ? (
-                <div className={styles.home}>
+                <div className={styles.projects}>
                     <header>
                         <nav className={styles.nav}>
                             <ul className={styles.pages}>
@@ -57,16 +57,25 @@ function Home() {
                         </nav>
                     </header>
                     <main className={styles.main}>
-                        <div className={styles.mainImage}>
-                            <h1>Renan Mendes</h1>
-                            <h2>Engenharia de Software</h2>
+                        <div className={styles.projectsTitle}>
+                            <h1>Meus projetos</h1>
                         </div>
-                        <div className={styles.mainText}>
-                            <h1>React &lt;/&gt; Developer</h1>
-                            <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
-                            <div className={styles.mainButtons}>
-                                <button>Currículo<CiShare1 /> </button>
-                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                        <div className={styles.containerProjects}>
+                            <div className={styles.featuredProject}>
+                                <div className={styles.backgroundProject}>
+
+                                </div>
+                                <div className={styles.aboutProject}>
+                                    <p>Projeto em destaque</p>
+                                    <h2>Nome do projeto</h2>
+                                    <span>
+                                        Breve descrição projeto.
+                                    </span>
+                                    <div className={styles.project}>
+                                        <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                        <button>Visitar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </main>
@@ -121,4 +130,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Projects;

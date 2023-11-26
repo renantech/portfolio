@@ -1,0 +1,318 @@
+/* Header */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0em 10em;
+    justify-content: space-between;
+
+    margin-top: 1em;
+    margin-right: 8em;
+}
+
+.pages {
+    display: flex;
+    gap: 3em;
+}
+
+.pages li {
+    list-style: none;
+}
+
+.pages li a {
+    color: #000;
+    text-decoration-line: none;
+    position: relative;
+}
+
+.pages li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.pages li a:hover::before {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    gap: 2em;
+}
+
+.social li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.social li svg {
+    font-size: 1.7em;
+}
+
+.social li svg:hover {
+    position: relative;
+    top: -2px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.3vw;
+    height: 6vh;
+
+    cursor: pointer;
+    border-radius: 70%;
+    background-color: #080808;
+}
+
+.person p {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main */
+.main {
+    margin-bottom: 5em;
+}
+
+.projectsTitle {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.projectsTitle h1 {
+    font-size: 7em;
+    font-weight: bold;
+}
+
+.containerProjects {
+    display: flex;
+    justify-content: center;
+}
+
+.featuredProject {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 45vh;
+    padding: 2em;
+    padding-right: 25em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.backgroundProject {
+    width: 65%;
+    height: 90%;
+
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.aboutProject {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.aboutProject p {
+    color: purple;
+    font-weight: bold;
+}
+
+.aboutProject h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.project {
+    display: flex;
+    gap: 1em;
+}
+
+.project button {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+
+    padding: 1em 2em;
+
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #080808;
+}
+
+.project button:hover {
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 2em;
+    border-top: 2px solid #000;
+}
+
+/* Header Mobile */
+.headerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2em;
+}
+
+.headerMobile svg {
+    font-size: 2em;
+}
+
+.headerMobile .personMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3em;
+    height: 3em;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: #080808;
+}
+
+/* Nav Mobile */
+.overlayNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(32, 32, 32, 0.9);
+    z-index: 999;
+}
+
+.overlayNav svg {
+    margin: 1em;
+
+    color: #fff;
+    font-size: 2em;
+}
+
+.pagesMobile {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    
+    margin-top: 15em;
+}
+
+.pagesMobile li {
+    margin: 0 auto;
+
+    list-style: none;
+}
+
+.pagesMobile li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.pagesMobile li:first-child {
+    border-bottom: 1px solid #fff;
+}
+
+.socialMobile {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1em;
+}
+
+.socialMobile li {
+    list-style: none;
+}
+
+.socialMobile svg {
+    font-size: 1.7em;
+}
+
+/* Main Mobile */
+.mainMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainImageMobile {
+    margin-top: 5em;
+    margin-bottom: 20em;
+}
+
+.mainTextMobile {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5em;
+}
+
+.mainTextMobile h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mainTextMobile p {
+    text-align: center;
+}
+
+.mainButtonsMobile {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    margin-top: 2em;
+}
+
+.mainButtonsMobile button {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em 2em;
+
+    color: #fff;
+    font-weight: bold;
+    background-color: #080808;
+}
+
+.mainButtonsMobile a {
+    color: #000;
+    font-weight: bold;
+}
