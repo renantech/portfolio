@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { CiShare1 } from "react-icons/ci";
 import { PiListThin } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
 
@@ -41,9 +40,9 @@ function Projects() {
                     <header>
                         <nav className={styles.nav}>
                             <ul className={styles.pages}>
-                                <li><a href="http://localhost:3000/">Home</a></li>
-                                <li><a href="http://localhost:3000/projetos">Projetos</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
                             <div className={styles.person}>
                                 <p>RM</p>
@@ -77,6 +76,40 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
+                            <div className={styles.projectsShow}>
+                                <div className={styles.projectOne}>
+                                    <div className={styles.backgroundProject}>
+
+                                    </div>
+                                    <div className={styles.aboutProject}>
+                                        <p>Projeto em destaque</p>
+                                        <h2>Nome do projeto</h2>
+                                        <span>
+                                            Breve descrição projeto.
+                                        </span>
+                                        <div className={styles.project}>
+                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Visitar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.projectTwo}>
+                                    <div className={styles.backgroundProject}>
+
+                                    </div>
+                                    <div className={styles.aboutProject}>
+                                        <p>Projeto em destaque</p>
+                                        <h2>Nome do projeto</h2>
+                                        <span>
+                                            Breve descrição projeto.
+                                        </span>
+                                        <div className={styles.project}>
+                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Visitar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </main>
                     <footer className={styles.footer}>
@@ -95,9 +128,9 @@ function Projects() {
                         <nav className={styles.overlayNav}>
                             <IoMdClose onClick={toggleNavList} />
                             <ul className={styles.pagesMobile}>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Home</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Projetos</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
                             <ul className={styles.socialMobile}>
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
@@ -108,17 +141,60 @@ function Projects() {
                         </nav>
                     )}
                     <main className={styles.mainMobile}>
-                        <div className={styles.mainTextMobile}>
-                            <h1>React &lt;/&gt; Developer</h1>
-                            <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
-                            <div className={styles.mainButtonsMobile}>
-                                <button>Currículo<CiShare1 /> </button>
-                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
-                            </div>
+                        <div className={styles.projectsTitle}>
+                            <h1>Meus projetos</h1>
                         </div>
-                        <div className={styles.mainImageMobile}>
-                            <h1>Renan Mendes</h1>
-                            <h2>Engenharia de Software</h2>
+                        <div className={styles.containerProjects}>
+                            <div className={styles.featuredProject}>
+                                <div className={styles.backgroundProject}>
+
+                                </div>
+                                <div className={styles.aboutProject}>
+                                    <p>Projeto em destaque</p>
+                                    <h2>Nome do projeto</h2>
+                                    <span>
+                                        Breve descrição projeto.
+                                    </span>
+                                    <div className={styles.project}>
+                                        <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                        <button>Visitar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.projectsShow}>
+                                <div className={styles.projectOne}>
+                                    <div className={styles.backgroundProject}>
+
+                                    </div>
+                                    <div className={styles.aboutProject}>
+                                        <p>Projeto em destaque</p>
+                                        <h2>Nome do projeto</h2>
+                                        <span>
+                                            Breve descrição projeto.
+                                        </span>
+                                        <div className={styles.project}>
+                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Visitar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.projectTwo}>
+                                    <div className={styles.backgroundProject}>
+
+                                    </div>
+                                    <div className={styles.aboutProject}>
+                                        <p>Projeto em destaque</p>
+                                        <h2>Nome do projeto</h2>
+                                        <span>
+                                            Breve descrição projeto.
+                                        </span>
+                                        <div className={styles.project}>
+                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Visitar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </main>
                     <footer className={styles.footer}>

@@ -41,9 +41,9 @@ function Home() {
                     <header>
                         <nav className={styles.nav}>
                             <ul className={styles.pages}>
-                                <li><a href="http://localhost:3000/">Home</a></li>
-                                <li><a href="http://localhost:3000/projetos">Projetos</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
                             <div className={styles.person}>
                                 <p>RM</p>
@@ -86,9 +86,9 @@ function Home() {
                         <nav className={styles.overlayNav}>
                             <IoMdClose onClick={toggleNavList} />
                             <ul className={styles.pagesMobile}>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Home</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Projetos</a></li>
-                                <li><a href="https://react-icons.github.io/react-icons/search/#q=linkedin">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
                             <ul className={styles.socialMobile}>
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>

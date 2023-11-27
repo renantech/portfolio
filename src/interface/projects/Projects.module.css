@@ -94,11 +94,6 @@
     font-weight: bold;
 }
 
-.containerProjects {
-    display: flex;
-    justify-content: center;
-}
-
 .featuredProject {
     display: flex;
     gap: 5em;
@@ -107,8 +102,10 @@
 
     width: 80%;
     height: 45vh;
+    margin: 0 auto;
     padding: 2em;
-    padding-right: 25em;
+    padding-left: 5em;
+    padding-right: 20em;
 
     border-radius: 10px;
     border: 1px solid #000;
@@ -162,6 +159,42 @@
     color: #000;
     border: 2px solid #000;
     background-color: #fff;
+}
+
+.projectsShow {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+
+    margin-top: 5em;
+}
+
+.projectOne {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    height: 45vh;
+    padding: 2em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.projectTwo {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    height: 45vh;
+    padding: 2em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
 }
 
 /* Footer */
