@@ -273,7 +273,7 @@
     text-decoration-line: none;
 }
 
-.pagesMobile li:first-child {
+.pagesMobile li:nth-child(2) {
     border-bottom: 1px solid #fff;
 }
 
@@ -348,4 +348,104 @@
 .mainButtonsMobile a {
     color: #000;
     font-weight: bold;
+}
+
+/* Mobile */
+.projectsTitleMobile {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.featuredProjectMobile {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+    height: 45vh;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.aboutProjectMobile {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.aboutProjectMobile p {
+    color: purple;
+    font-weight: bold;
+}
+
+.aboutProjectMobile h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.projectMobile {
+    display: flex;
+    gap: 1em;
+}
+
+.projectMobile button {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+
+    padding: 1em 2em;
+
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #080808;
+}
+
+.projectMobile button:hover {
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.projectsShowMobile {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 2em;
+}
+
+.projectOneMobile {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+    height: 45vh;
+    padding: 2em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.projectTwoMobile {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+    height: 45vh;
+    padding: 2em;
+    margin-bottom: 5.5em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
 }

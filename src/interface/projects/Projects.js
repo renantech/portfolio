@@ -71,7 +71,7 @@ function Projects() {
                                         Breve descrição projeto.
                                     </span>
                                     <div className={styles.project}>
-                                        <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                        <button>Repositório <FaGithub /></button>
                                         <button>Visitar</button>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ function Projects() {
                                             Breve descrição projeto.
                                         </span>
                                         <div className={styles.project}>
-                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Repositório <FaGithub /></button>
                                             <button>Visitar</button>
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@ function Projects() {
                                             Breve descrição projeto.
                                         </span>
                                         <div className={styles.project}>
-                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                            <button>Repositório <FaGithub /></button>
                                             <button>Visitar</button>
                                         </div>
                                     </div>
@@ -141,55 +141,46 @@ function Projects() {
                         </nav>
                     )}
                     <main className={styles.mainMobile}>
-                        <div className={styles.projectsTitle}>
+                        <div className={styles.projectsTitleMobile}>
                             <h1>Meus projetos</h1>
                         </div>
                         <div className={styles.containerProjects}>
-                            <div className={styles.featuredProject}>
-                                <div className={styles.backgroundProject}>
-
-                                </div>
-                                <div className={styles.aboutProject}>
+                            <div className={styles.featuredProjectMobile}>
+                                <div className={styles.aboutProjectMobile}>
                                     <p>Projeto em destaque</p>
                                     <h2>Nome do projeto</h2>
                                     <span>
                                         Breve descrição projeto.
                                     </span>
-                                    <div className={styles.project}>
-                                        <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                    <div className={styles.projectMobile}>
+                                        <button>Repositório <FaGithub /></button>
                                         <button>Visitar</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className={styles.projectsShow}>
-                                <div className={styles.projectOne}>
-                                    <div className={styles.backgroundProject}>
-
-                                    </div>
-                                    <div className={styles.aboutProject}>
-                                        <p>Projeto em destaque</p>
+                            <div className={styles.projectsShowMobile}>
+                                <div className={styles.projectOneMobile}>
+                                    <div className={styles.aboutProjectMobile}>
+                                        <p>Projeto 1</p>
                                         <h2>Nome do projeto</h2>
                                         <span>
                                             Breve descrição projeto.
                                         </span>
-                                        <div className={styles.project}>
-                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                        <div className={styles.projectMobile}>
+                                            <button>Repositório <FaGithub /></button>
                                             <button>Visitar</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={styles.projectTwo}>
-                                    <div className={styles.backgroundProject}>
-
-                                    </div>
-                                    <div className={styles.aboutProject}>
-                                        <p>Projeto em destaque</p>
+                                <div className={styles.projectTwoMobile}>
+                                    <div className={styles.aboutProjectMobile}>
+                                        <p>Projeto 2</p>
                                         <h2>Nome do projeto</h2>
                                         <span>
                                             Breve descrição projeto.
                                         </span>
-                                        <div className={styles.project}>
-                                            <button>Repositório <FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></button>
+                                        <div className={styles.projectMobile}>
+                                            <button>Repositório <FaGithub /></button>
                                             <button>Visitar</button>
                                         </div>
                                     </div>
