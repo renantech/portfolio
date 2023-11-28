@@ -42,7 +42,7 @@ function Projects() {
                             <ul className={styles.pages}>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
-                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/sobremim">Sobre mim</a></li>
                             </ul>
                             <div className={styles.person}>
                                 <p>RM</p>
@@ -130,7 +130,7 @@ function Projects() {
                             <ul className={styles.pagesMobile}>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
-                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/sobremim">Sobre mim</a></li>
                             </ul>
                             <ul className={styles.socialMobile}>
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>

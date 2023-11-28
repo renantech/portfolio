@@ -6,10 +6,11 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { CiShare1 } from "react-icons/ci";
 import { PiListThin } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
+import { IoCheckmark } from "react-icons/io5";
 
-import styles from './Home.module.css';
+import styles from './Aboutme.module.css';
 
-function Home() {
+function Aboutme() {
     const [openNavMobile, setOpenNavMobile] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -37,7 +38,7 @@ function Home() {
     return (
         <div>
             {windowWidth > 768 ? (
-                <div className={styles.home}>
+                <div className={styles.aboutme}>
                     <header>
                         <nav className={styles.nav}>
                             <ul className={styles.pages}>
@@ -57,16 +58,40 @@ function Home() {
                         </nav>
                     </header>
                     <main className={styles.main}>
-                        <div className={styles.mainImage}>
-                            <h1>Renan Mendes</h1>
-                            <h2>Engenharia de Software</h2>
+                        <h1>Experiência</h1>
+                        <div className={styles.timeline}>
+                            <div className={styles.timelineItem}>
+                                <div className={styles.timelineItemContent}>
+                                    <h2>Curso de Python 3 - Luiz Otávio Miranda</h2>
+                                    <p>Atualmente, estou aprimorando minhas habilidades em programação por meio de um curso abrangente de Python 3, com um foco especial em Inteligência Artificial e Sistemas de Gestão. Durante este curso, tenho explorado os fundamentos da linguagem Python, praticado habilidades de codificação e aplicado o Python em projetos práticos. Além disso, estou entusiasmado em mergulhar nos conceitos de Inteligência Artificial e aprender a implementar soluções tecnológicas eficazes para Sistemas de Gestão. Estou animado para aplicar essas habilidades em projetos futuros e continuar a minha jornada de aprendizado na interseção da programação e tecnologias emergentes.</p>
+                                    <span className={styles.timelineItemDate}>Nov 2023 - Presente</span>
+                                </div>
+                            </div>
+                            <div className={styles.timelineItem}>
+                                <div className={styles.timelineItemContent}>
+                                    <h2>Curso de JavaScript e TypeScript do básico ao avançado - Luiz Otávio Miranda (Certificado <IoCheckmark />)</h2>
+                                    <p>Este é o curso o qual construí a minha base na programação. Aprendi JavaScript do zero absoluto até TypeScript. Além de aprender vários outras skills na programação como HTML5, CSS3, Design Patterns, S.O.L.I.D, Banco de dados, JSON, LocalStorage, Git e GitHub. <br/>
+                                    <a href="https://www.udemy.com/certificate/UC-c26c75e0-5240-43b4-8586-2b4234039051/" rel='noreferrer' target='_blank'>Certificado</a>
+                                    </p>
+                                    <span className={styles.timelineItemDate}>Jun 2023 - Ago 2023</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className={styles.mainText}>
-                            <h1>React &lt;/&gt; Developer</h1>
-                            <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
-                            <div className={styles.mainButtons}>
-                                <button>Currículo<CiShare1 /> </button>
-                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                        <h1>Educação</h1>
+                        <div className={styles.timeline}>
+                            <div className={styles.timelineItem}>
+                                <div className={styles.timelineItemContent}>
+                                    <h2>Estudante em Engenharia de Software - PUC Minas</h2>
+                                    <p>Atualmente estou fazendo o curso bacharelado de engenharia de software na PUC Minas (Pontifícia Universidade Católica).</p>
+                                    <span className={styles.timelineItemDate}>Fev 2023 - Presente</span>
+                                </div>
+                            </div>
+                            <div className={styles.timelineItem}>
+                                <div className={styles.timelineItemContent}>
+                                    <h2>Ensino Médio Completo</h2>
+                                    <p>Concluí o Ensino Médio no SESI ACR no ano de 2022. Durante esse período, participei ativamente de atividades extracurriculares, projetos, etc.</p>
+                                    <span className={styles.timelineItemDate}>Fev 2020 - Dez 2022</span>
+                                </div>
                             </div>
                         </div>
                     </main>
@@ -86,9 +111,9 @@ function Home() {
                         <nav className={styles.overlayNav}>
                             <IoMdClose onClick={toggleNavList} />
                             <ul className={styles.pagesMobile}>
-                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Aboutme</a></li>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
-                                <li><a href="https://portfolio-steel-ten-78.vercel.app/sobremim">Sobre mim</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
                             <ul className={styles.socialMobile}>
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
@@ -121,4 +146,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Aboutme;
