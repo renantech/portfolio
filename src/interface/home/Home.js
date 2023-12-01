@@ -9,8 +9,11 @@ import { IoMdClose } from "react-icons/io";
 
 import styles from './Home.module.css';
 
+import Modal from '../../components/modal/Modal';
+
 function Home() {
     const [openNavMobile, setOpenNavMobile] = useState(false);
+    const [openContact, setOpenContact] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     function toggleNavList() {
@@ -34,10 +37,14 @@ function Home() {
         window.open(url, '_blank')
     }
 
+    function toggleContact() {
+        setOpenContact(!openContact);
+    }
+
     return (
         <div>
             {windowWidth > 768 ? (
-                <div className={styles.home}>
+                <div className={openContact ? `${styles.overlay}` : `${styles.home}`}>
                     <header>
                         <nav className={styles.nav}>
                             <ul className={styles.pages}>
@@ -61,12 +68,15 @@ function Home() {
                             <h1>Renan Mendes</h1>
                             <h2>Engenharia de Software</h2>
                         </div>
+                        {openContact && (
+                            <Modal closeModal={toggleContact} />
+                        )}
                         <div className={styles.mainText}>
                             <h1>React &lt;/&gt; Developer</h1>
                             <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
                             <div className={styles.mainButtons}>
                                 <button>Currículo<CiShare1 /> </button>
-                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                                <span onClick={toggleContact}>Contato</span>
                             </div>
                         </div>
                     </main>
@@ -75,7 +85,7 @@ function Home() {
                     </footer>
                 </div>
             ) : (
-                <div>
+                <div className={openContact ? `${styles.overlay}` : ''}>
                     <header className={styles.headerMobile}>
                         <PiListThin onClick={toggleNavList} />
                         <div className={styles.personMobile}>
@@ -99,12 +109,15 @@ function Home() {
                         </nav>
                     )}
                     <main className={styles.mainMobile}>
+                        {openContact && (
+                            <Modal closeModal={toggleContact} />
+                        )}
                         <div className={styles.mainTextMobile}>
                             <h1>React &lt;/&gt; Developer</h1>
                             <p>Estudante de engenharia de software pela PUC. Experiência com JavaScript, TypeScript e gerenciamento com notação BPM.</p>
                             <div className={styles.mainButtonsMobile}>
                                 <button>Currículo<CiShare1 /> </button>
-                                <a href="https://www.instagram.com/renan.mvc/">Contato</a>
+                                <span onClick={toggleContact}>Contato</span>
                             </div>
                         </div>
                         <div className={styles.mainImageMobile}>
