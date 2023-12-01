@@ -198,7 +198,7 @@
     text-decoration-line: none;
 }
 
-.pagesMobile li:first-child {
+.pagesMobile li:last-child {
     border-bottom: 1px solid #fff;
 }
 

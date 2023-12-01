@@ -110,7 +110,7 @@ function Aboutme() {
                         <nav className={styles.overlayNav}>
                             <IoMdClose onClick={toggleNavList} />
                             <ul className={styles.pagesMobile}>
-                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Aboutme</a></li>
+                                <li><a href="https://portfolio-steel-ten-78.vercel.app/">Home</a></li>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/projetos">Projetos</a></li>
                                 <li><a href="https://portfolio-steel-ten-78.vercel.app/">Sobre mim</a></li>
                             </ul>
