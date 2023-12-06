@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { PiListThin } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";
@@ -52,7 +51,6 @@ function Aboutme() {
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
                                 <li><FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></li>
                                 <li><FaLinkedin onClick={() => socialLinks('https://www.linkedin.com/in/renan-tech/')} /></li>
-                                <li><BsFillMoonStarsFill /></li>
                             </ul>
                         </nav>
                     </header>
@@ -118,7 +116,6 @@ function Aboutme() {
                                 <li><AiFillInstagram onClick={() => socialLinks('https://www.instagram.com/renan.mvc/')} /></li>
                                 <li><FaGithub onClick={() => socialLinks('https://github.com/renantech')} /></li>
                                 <li><FaLinkedin onClick={() => socialLinks('https://www.linkedin.com/in/renan-tech/')} /></li>
-                                <li><BsFillMoonStarsFill /></li>
                             </ul>
                         </nav>
                     )}
