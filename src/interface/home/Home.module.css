@@ -7,7 +7,7 @@
 
     cursor: default;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 998; 
+    z-index: 998;
 }
 
 /* Header */
@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     margin-top: 1em;
     margin-right: 8em;
     padding: 0em 10em;
@@ -230,7 +230,7 @@
     display: flex;
     gap: 1em;
     flex-direction: column;
-    
+
     margin-top: 15em;
 }
 
@@ -321,4 +321,19 @@
 .mainButtonsMobile a {
     color: #000;
     font-weight: bold;
+}
+
+/* For tablets like iPadAir, iPadPro, etc */
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+    .nav {
+        gap: 5em;
+        padding: 0 0;
+        position: relative;
+        left: 3em;
+    }
+
+    .person {
+        width: 80px;
+        margin-right: 1em;
+    }
 }
