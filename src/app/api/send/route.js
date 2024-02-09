@@ -6,16 +6,18 @@ const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
   const { email, subject, message } = await req.json();
+  console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
+      from: 'Acme <onboarding@resend.dev>',
+      to: [fromEmail],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
           <p>Thank you for contacting us!</p>
           <p>New message submitted:</p>
+          <p>{email}</p>
           <p>{message}</p>
         </>
       ),
