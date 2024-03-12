@@ -6,11 +6,11 @@ import ProjectTag from './ProjectTag';
 const projectsData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
-        gitUrl: '/',
-        previewUrl: '/',
+        title: "Dragon Repeller",
+        description: "Neste projeto prático, aprendi conceitos fundamentais de programação em JavaScript, codificando meu próprio RPG. Aprendi a trabalhar com arrays, strings, objetos, funções, loops, declarações e if/else.",
+        image: "/images/projects/dragon-repeller.png",
+        gitUrl: 'https://github.com/renantech/dragon-repeller',
+        previewUrl: 'https://renantech.github.io/dragon-repeller/',
         tag: ["Todos", "Web"]
     },
     {
